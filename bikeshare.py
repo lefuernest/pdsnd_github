@@ -2,7 +2,7 @@ import time
 import pandas as pd
 
 CITY_DATA = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
-MONTHS= {'january': 1,'february': 2,'march': 3,'april': 4,'may': 5,'june': 6,
+MONTHS = {'january': 1,'february': 2,'march': 3,'april': 4,'may': 5,'june': 6,
          'jan': 1,'feb': 2,'mar': 3,'apr': 4,'may': 5,'jun': 6}
 
 DAYS = {'monday': 0,'tuesday': 1,'wednesday': 2,'thursday': 3,'friday': 4,'saturday': 5,'sunday': 6,
@@ -117,15 +117,15 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print()
-    print('The most commonly used start station :{}'.format(df['Start Station'].mode()[0]))
+    # replaced print() with \n
+    print('The most commonly used start station :{}\n'.format(df['Start Station'].mode()[0]))
 
     # TO DO: display most commonly used end station
-    print()
-    print('Most commonly used end station :{}'.format(df['End Station'].mode()[0]))
+
+    print('Most commonly used end station :{}\n'.format(df['End Station'].mode()[0]))
 
     # TO DO: display most frequent combination of start station and end station trip
-    print()
+ 
     #TO DO: display most frequent combination of start station and end station trip
     x = str(df.groupby(['Start Station', 'End Station']).size().sort_values(ascending=False))
     x = x.replace('(', '').replace(')', '').replace("'", '')
