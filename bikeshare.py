@@ -204,15 +204,6 @@ def raw_data(df):  #edited code
     
     
     #TO DO: display five rows of data upon user's request
-    choice = input('would you like to view 5 rows of raw data?? Yes or No\n').lower()
-    if choice=='yes' or choice=='y' or choice=='yus':
-        choice=True
-    elif choice=='no' or choice=='n' or choice=='nope':
-        choice=False
-    else:
-        print('Invalid Input. Please try that again!. ')
-        raw_data(df)
-        return
     index = 0
     user_input = input('would you like to view 5 rows of raw data?, Yes or No\n')
     while True:
@@ -240,7 +231,7 @@ def main():
         raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
-        print()
+
         if restart != 'yes' and restart != 'y' and restart != 'yus':
             break
 
