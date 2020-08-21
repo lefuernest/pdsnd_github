@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 =======
 # pdsnd_github
 GitHub project (Project 3) repository for PDSND
->>>>>>> 6917e872565c6cecf24bb9dbc4c3446aefa55da6
+
 ## This Python script is written for Project 3 of Udacity's Data Analysis Nanodegree (DAND) - data science programming with python -
    and is used to explore data related to Bikeshare systems for Chicago, New York City, and Washington.It imports data from .csv files 
    and compute descriptive statistics from the data. It also takes in users' raw input to create an interactive experience in the terminal
